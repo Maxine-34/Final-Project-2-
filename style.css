@@ -1,0 +1,333 @@
+/*Home Page*/
+body {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*Sets ALL text to Verdana font*/
+}
+
+.header-row {
+    display: flex; /*Makes the header a flexbox, letting elements go in a row flexibly*/
+    align-items: center; /*Centers items vertically*/
+    justify-content: center; /*Centers items horizontally*/
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fffee7;
+}
+
+.logo {
+    width: 130px;
+    height: auto; /*automatically adjusts height of image based on width*/
+    margin-right: 0px;
+    padding-left: 20px;
+}
+
+.title {
+    flex: 1; /*Determines how much space the title takes up*/
+    text-align: center; /*Centers the title*/
+    margin: 0px;
+    padding: 0px; /*the paddings are to adjust the title to be centered in the website*/
+    padding-bottom: 10px; /*Adds space between the title and navigation bar*/
+    padding-right: 150px; /*Adjusts the title to be centered in the website*/
+    color: #405043;
+    display: block; /*Makes sure the title is on its own line*/
+}
+
+
+h1 {
+    text-align: center; /*Centers all h1 headers*/
+    padding: 20px; /*Gives a padding of 20px to all h1*/
+}
+
+.navbar ul{
+    list-style-type: none; /*Removes the bullet points from the list*/
+    background-color: rgb(61, 61, 61); /*background color of the navigation bar in RGB*/
+    overflow: hidden; /*Makes sure the content is in the navigation bar*/
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none; /*Removes the underline from the links*/
+    font-size: large ; /*Makes font size of links large*/
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 5px;
+    display: block; /*Makes the entire area of the list item clickable*/
+}
+
+.navbar li:hover{
+    background-color: rgb(30, 29, 29); /*When hovering over the buttons, the background color changes to a darker color*/
+}
+.navbar li{
+    float: left;
+}
+
+.header {
+    text-align: left; /*Aligns the text to the left*/
+    font-size: 40px;
+    background-image: url(media/lifeland.jpg); /*Sets background image of header to the linked image*/
+    background-size: cover; /*Makes sure the background image covers the header and does not repeat*/
+    padding: 260px; /*Adjusts the size of the header*/
+    margin: 0px;
+}
+
+.header span {
+    color: #db622e;
+    display: inline-block; /*Makes sure span is like an inline element but allows padding and margin*/
+    margin-top: 0px;
+    margin-left: 0px;
+    position: absolute; /*Removes span from normal document flow*/
+    top: 300px; /*top and left positions the span accordingly*/
+    left: 100px;
+}
+
+.divider {
+    display: flex; /*Makes the divider a flexbox*/
+    background-color: #405f46; /*Changes the color of divider*/
+    flex: 1; /*Makes divider take up the whole width of the page*/
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.img-ref {
+    float: left; /*Moves or floats image to the left of the paragraph*/
+    width: 65%; /*Sets width of image to 65% of original image size*/
+    background-color: #b1cbcc;
+    margin: 0px;
+    margin-right: 10px;
+    padding: 20px; /*Line 100 and 101 gives space between the image and paragraph*/
+    border-right: 3px dotted #405043;
+    border-bottom: 3px dotted #405043; /*Line 102 and 103 adds a dotted border to the right and bottom of the image*/
+}
+
+#p1-container {
+    background-color: #e5f2d9; /*Changes background color of the first paragraph section*/
+    margin: 0px;
+    padding: 0px;
+}
+
+.bg-header {
+    text-align: center;
+    background-color: #e5f2d9; /*Changes background color of the container h1 is in*/
+    color: #db622e; /*Changes font color of h1*/
+    margin: 0px;
+    padding: 10px; /*Adds padding to the container h1 is in*/
+}
+
+.p1 {
+    text-align: center ; /*Centers the first paragraph*/
+    padding: 10px;
+    padding-bottom: 5px;
+    margin: 10px;
+    margin-bottom: 15px; /*Line 122-125 adds space between the paragraph and the image*/
+}
+
+.sides {
+    background-color: #fffee7; /*Changes the color of the sides*/
+    display: flex; /*Makes the sides a flexbox so the element acts as a "border" for the page*/
+    height: auto; /*Automatically adjusts height of sides to match the content*/
+}
+
+.sideimage {
+    width: 350px;
+    height: auto; /*automatically adjusts height of image based on the content*/
+    margin: 0px;
+    background-color: #b1cbcc;
+    padding-left: 20px;
+    padding-right: 20px; /*Lines 139-140 adds a space between the image and content section*/
+}
+
+.content {
+    flex: 1; /*Makes content section take up remaining space*/
+    display: flex; /*Makes content section a flexbox*/
+    flex-direction: column; /*Makes content section a column flexbox, arranging contents into a column*/
+    justify-content: flex-end; /*Aligns items to the bottom of the content section*/
+}
+
+.content h1 {
+    color: #db622e; /*Changes color of h1 in content section*/
+    margin: 10px;
+    padding: 10px; /*Lines 152-153 adds a margin and padding to give space between h1 and paragraph*/
+}
+
+.p2 {
+    text-align: left; /*Aligns the second paragraph to the left*/
+    margin: 20px;
+    padding-left: 5px;
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-bottom: 30px; /*Lines 158-162 adds space between the paragraph and the image*/
+}
+
+.p3 {
+    text-align: right; /*Aligns the third paragraph to the right*/
+    margin: 20px;
+    padding-left: 100px;
+    padding-bottom: 30px; /*Lines 167-169 adds space between the paragraph and the image*/
+}
+
+.sides2 {
+    background-color: #e5f2d9; /*Changes the color of the sides*/
+    display: flex; /*Makes the sides2 a flexbox so the element acts as a "border" for the page*/
+    height: auto; /*Automatically adjusts height of sides2 to match the length of paragraph*/
+}
+
+.sides2 h1 {
+    background-color: #405f46; /*Changes background color of h1 in sides2 section*/
+    color: white; /*Changes font color of h1 in sides2 section*/
+    border: 3px dotted #fffee7; /*Adds a dotted border around h1 in sides2 section*/
+}
+
+.border {
+    background-color: #b1cbcc; /*Changes color of borders*/
+    width: 50px; /*Sets width of borders to 50px*/
+}
+
+.content2 {
+    flex: 1; /*Makes content2 section take up remaining space, stretching so that the borders move to the side of the page*/
+    text-align: center; /*Centers the text in the content2 section*/
+    padding-left: 30px;
+    padding-right: 30px; /*Lines 192-193 adds space between border and paragraph on both sides*/
+}
+
+.content2 p {
+    margin-right: 50px;
+    margin-left: 50px; /*Lines 197-198 adds space between border and paragraph on both sides*/
+}
+
+.advocacy {
+    flex: 1; /*Makes advocacy section take up remaining space, putting all images on the same line*/
+    display: block; /*Makes advocacy section a block element*/
+    width: 250px;
+    height: auto;
+    padding: 20px;
+    background-color: #b1cbcc; /*Changes background color of advocacy section*/
+    margin: 20px;
+}
+
+/*About Us Page*/
+.p4 {
+    flex: 1; /*Makes the paragraph take up the remaining space*/
+    text-align: center; /*Centers the paragraph*/
+    padding: 20px;
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px; /*Lines 215-218 adds space between border and sets a specific margin for the text*/
+}
+
+.img {
+    margin: 0px;
+    height: auto; /*automatically adjusts height of image*/
+    object-fit: cover; /*Makes image cover the area without stretching or distorting*/
+    width: 100%; /*Sets image width to 100% of container*/
+    max-width: 100%; /*Makes sure image does not exceed container width*/
+}
+
+.aboutme {
+    display: flex; /*Makes the aboutme section a flexbox*/
+    align-items: center; /*Centers items vertically*/
+    justify-content: center; /*Centers items horizontally*/
+    margin: 30px;
+    border-bottom: 5px dashed #b1cbcc; /*Adds a dashed border at the bottom with size of 5px*/
+    background-color: #e5f2d9; /*Changes background color of About Me Section only to a specific color*/
+    margin: 0px;
+}
+
+.img2 {
+    float: left; /*Moves or floats image to the left, letting the paragraph go to the right*/
+    width: 350px; /*Sets width of image to 350px*/
+    padding: 30px;
+    background-color: #b1cbcc; /*Changes background color of the image according to the space given by padding*/
+    border: 5px dashed #405043; /*Adds a dashed border around the image*/
+}
+
+.p5 {
+    text-align: center; /*Centers the paragraph in the About Me section*/
+    margin: 20px;
+    padding-left: 30px;
+    padding-right: 30px; /*Lines 249-251 adds space between the paragraph and the image*/
+}
+
+.featart {
+    background-color: #fffee7; /*Changes background color of the featured articles section*/
+}
+
+.h2-link {
+    text-align: center; /*Centers the header in the featured articles section*/
+    margin: 0px; /*Removes default margin of h2*/
+    padding-top: 20px;
+    padding-bottom: 10px; /*Lines 261-262 adds space between the header and the featured articles*/
+}
+.links {
+    display: flex; /*Makes the links a flexbox, putting all links on the same line*/
+    justify-content: center; /*Centers the links in the featured articles section*/
+    padding: 10px;
+    margin: 10px;
+}
+
+.featlink {
+    flex: 1;
+    border: 15px groove #405f46; /*Adds a grooved border around the featured articles section*/
+    background-color: #b1cbcc; /*Changes background color of the featured articles section*/
+    margin: 20px;
+    padding: 50px;
+}
+
+.featlink h4 {
+    text-align: center; /*Centers the header in the featured articles section*/
+    color: #405043; /*Changes color of the header in the featured articles section*/
+}
+
+.featlink p {
+    text-align: center; /*Centers the paragraph in the featured articles section*/
+    color: #405043; /*Changes color of the paragraph in the featured articles section*/
+}
+
+.footer {
+    display: flex; /*Makes the footer a flexbox*/
+    background-color: #405f46;
+    color: white;
+    text-align: center; /*Centers the text in the footer*/
+    padding: 10px; /*Adds padding and spaces out the text*/
+    margin: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.contact {
+    text-align: left; /*Aligns the contact section to the left*/
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact h1 {
+    text-align: left; /*Aligns the header to the left*/
+}
+
+form {
+    display: flex; /*Makes the form a flexbox*/
+    flex-direction: column; /*Turns the flexbox into a column*/
+}
+
+.ref-list {
+    margin: 0px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    color: white; /*Changes text color to white*/
+    background-color: #405f46;
+    word-break: break-all; /*Allows long links to break into the next line*/
+}
+
+.refs {
+    padding: auto; /*Centers the references along with margin: auto*/
+    margin: auto;
+    font-size: 11px; /*Makes the font size smaller for references*/
+}
+
+#ref-li {
+    padding-bottom: 8px; /*Spaces out the references*/
+}
